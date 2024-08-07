@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d089bffc620183a916a09a9239759e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d089bffc620183a916a09a9239759e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d089bffc620183a916a09a9239759e5 = L.map(
+                "map_1d089bffc620183a916a09a9239759e5",
+                {
+                    center: [35.8617, 104.1954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98ea448e9b5bc250ed2ac0816d75ecb0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_98ea448e9b5bc250ed2ac0816d75ecb0.addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+            var marker_48734103fd35d20eeba68a898b5fff20 = L.marker(
+                [29.037749999406877, 111.70545217995837],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_69979f408afc2c333103589993e79a9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa71cfcea07e695f33ff314faa66ebb0 = $(`<div id="html_aa71cfcea07e695f33ff314faa66ebb0" style="width: 100.0%; height: 100.0%;">Area: 常德<br>Average Salary: 5.0</div>`)[0];
+                popup_69979f408afc2c333103589993e79a9f.setContent(html_aa71cfcea07e695f33ff314faa66ebb0);
+            
+        
+
+        marker_48734103fd35d20eeba68a898b5fff20.bindPopup(popup_69979f408afc2c333103589993e79a9f)
+        ;
+
+        
+    
+    
+            marker_48734103fd35d20eeba68a898b5fff20.bindTooltip(
+                `<div>
+                     常德
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab7ce89d8010619e6f753ff9a93414b9 = L.marker(
+                [30.25308298169347, 120.21551180372168],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_5edd5c81ae5d2d6998f0f6587a673948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_320db46437ad997ab4e8136513561af9 = $(`<div id="html_320db46437ad997ab4e8136513561af9" style="width: 100.0%; height: 100.0%;">Area: 杭州<br>Average Salary: 5.7375</div>`)[0];
+                popup_5edd5c81ae5d2d6998f0f6587a673948.setContent(html_320db46437ad997ab4e8136513561af9);
+            
+        
+
+        marker_ab7ce89d8010619e6f753ff9a93414b9.bindPopup(popup_5edd5c81ae5d2d6998f0f6587a673948)
+        ;
+
+        
+    
+    
+            marker_ab7ce89d8010619e6f753ff9a93414b9.bindTooltip(
+                `<div>
+                     杭州
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a5c93e94fe11de052da73e20847dd13 = L.marker(
+                [30.232618187567876, 120.20428990179938],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_f4420630a8b29259c9b4aa4691eeb506 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59771b031a8472ec6cdcf9dc0d4b9d2f = $(`<div id="html_59771b031a8472ec6cdcf9dc0d4b9d2f" style="width: 100.0%; height: 100.0%;">Area: 杭州·上城区<br>Average Salary: 5.421875</div>`)[0];
+                popup_f4420630a8b29259c9b4aa4691eeb506.setContent(html_59771b031a8472ec6cdcf9dc0d4b9d2f);
+            
+        
+
+        marker_9a5c93e94fe11de052da73e20847dd13.bindPopup(popup_f4420630a8b29259c9b4aa4691eeb506)
+        ;
+
+        
+    
+    
+            marker_9a5c93e94fe11de052da73e20847dd13.bindTooltip(
+                `<div>
+                     杭州·上城区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0c0155522adec795d436c1c5a3f58cd = L.marker(
+                [30.239805598053564, 119.73151737122271],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_62521dc83d7942fd9e093d204cbe29be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ef598aa967e790aad83f0939a2e658f = $(`<div id="html_4ef598aa967e790aad83f0939a2e658f" style="width: 100.0%; height: 100.0%;">Area: 杭州·临安区<br>Average Salary: 6.416666666666667</div>`)[0];
+                popup_62521dc83d7942fd9e093d204cbe29be.setContent(html_4ef598aa967e790aad83f0939a2e658f);
+            
+        
+
+        marker_d0c0155522adec795d436c1c5a3f58cd.bindPopup(popup_62521dc83d7942fd9e093d204cbe29be)
+        ;
+
+        
+    
+    
+            marker_d0c0155522adec795d436c1c5a3f58cd.bindTooltip(
+                `<div>
+                     杭州·临安区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36ea08f4b61c31eae3ac434643be6384 = L.marker(
+                [30.424739268745142, 120.30659216717552],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_8b7a88ab385f58aa303eb197ff49b1d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c07b9ddb10429b966721ce4a88843f2d = $(`<div id="html_c07b9ddb10429b966721ce4a88843f2d" style="width: 100.0%; height: 100.0%;">Area: 杭州·临平区<br>Average Salary: 6.75</div>`)[0];
+                popup_8b7a88ab385f58aa303eb197ff49b1d4.setContent(html_c07b9ddb10429b966721ce4a88843f2d);
+            
+        
+
+        marker_36ea08f4b61c31eae3ac434643be6384.bindPopup(popup_8b7a88ab385f58aa303eb197ff49b1d4)
+        ;
+
+        
+    
+    
+            marker_36ea08f4b61c31eae3ac434643be6384.bindTooltip(
+                `<div>
+                     杭州·临平区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f3fa528d6ff1f37a489cd36b74facf2 = L.marker(
+                [30.280405065311427, 119.98588694926113],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_2f59ff638f7f7025c54b2eb6a371426e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45c637fe1a1c51640b06f2bf0337c569 = $(`<div id="html_45c637fe1a1c51640b06f2bf0337c569" style="width: 100.0%; height: 100.0%;">Area: 杭州·余杭区<br>Average Salary: 5.5</div>`)[0];
+                popup_2f59ff638f7f7025c54b2eb6a371426e.setContent(html_45c637fe1a1c51640b06f2bf0337c569);
+            
+        
+
+        marker_5f3fa528d6ff1f37a489cd36b74facf2.bindPopup(popup_2f59ff638f7f7025c54b2eb6a371426e)
+        ;
+
+        
+    
+    
+            marker_5f3fa528d6ff1f37a489cd36b74facf2.bindTooltip(
+                `<div>
+                     杭州·余杭区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0c146ff7209cadec4d2d849473f1daa = L.marker(
+                [30.05472296730377, 119.96655568417805],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_b65f9df2dac3b25632115f594cef0963 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7657d41dc0d1f027e51bb986ddceac37 = $(`<div id="html_7657d41dc0d1f027e51bb986ddceac37" style="width: 100.0%; height: 100.0%;">Area: 杭州·富阳区<br>Average Salary: 5.666666666666667</div>`)[0];
+                popup_b65f9df2dac3b25632115f594cef0963.setContent(html_7657d41dc0d1f027e51bb986ddceac37);
+            
+        
+
+        marker_d0c146ff7209cadec4d2d849473f1daa.bindPopup(popup_b65f9df2dac3b25632115f594cef0963)
+        ;
+
+        
+    
+    
+            marker_d0c146ff7209cadec4d2d849473f1daa.bindTooltip(
+                `<div>
+                     杭州·富阳区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7a2497ce3e14e87cde62bde092627ae = L.marker(
+                [30.325204543491335, 120.14803289042315],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_8a43696f94341f0f38d1d9f999622e51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4027d31d3e1bc6605187dfcde3b97b1c = $(`<div id="html_4027d31d3e1bc6605187dfcde3b97b1c" style="width: 100.0%; height: 100.0%;">Area: 杭州·拱墅区<br>Average Salary: 6.0</div>`)[0];
+                popup_8a43696f94341f0f38d1d9f999622e51.setContent(html_4027d31d3e1bc6605187dfcde3b97b1c);
+            
+        
+
+        marker_f7a2497ce3e14e87cde62bde092627ae.bindPopup(popup_8a43696f94341f0f38d1d9f999622e51)
+        ;
+
+        
+    
+    
+            marker_f7a2497ce3e14e87cde62bde092627ae.bindTooltip(
+                `<div>
+                     杭州·拱墅区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07d0e21d15f484e8a3bd05e8d4cc431a = L.marker(
+                [29.79858479014279, 119.69759877582668],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_25e12b2001b8d7d26d37b949feb3ef22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_038c2f6029fe82a9b26e32a10d4e5103 = $(`<div id="html_038c2f6029fe82a9b26e32a10d4e5103" style="width: 100.0%; height: 100.0%;">Area: 杭州·桐庐县<br>Average Salary: 5.1</div>`)[0];
+                popup_25e12b2001b8d7d26d37b949feb3ef22.setContent(html_038c2f6029fe82a9b26e32a10d4e5103);
+            
+        
+
+        marker_07d0e21d15f484e8a3bd05e8d4cc431a.bindPopup(popup_25e12b2001b8d7d26d37b949feb3ef22)
+        ;
+
+        
+    
+    
+            marker_07d0e21d15f484e8a3bd05e8d4cc431a.bindTooltip(
+                `<div>
+                     杭州·桐庐县
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77cd89761b68f9e1071ac61f32e45a1a = L.marker(
+                [29.61495036603392, 119.04839230601344],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_d47247de8bbfe807c13ed1a33e22ab00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a0ba3211293d3d0400a174fa3f12d1f = $(`<div id="html_6a0ba3211293d3d0400a174fa3f12d1f" style="width: 100.0%; height: 100.0%;">Area: 杭州·淳安县<br>Average Salary: 5.5</div>`)[0];
+                popup_d47247de8bbfe807c13ed1a33e22ab00.setContent(html_6a0ba3211293d3d0400a174fa3f12d1f);
+            
+        
+
+        marker_77cd89761b68f9e1071ac61f32e45a1a.bindPopup(popup_d47247de8bbfe807c13ed1a33e22ab00)
+        ;
+
+        
+    
+    
+            marker_77cd89761b68f9e1071ac61f32e45a1a.bindTooltip(
+                `<div>
+                     杭州·淳安县
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8146088883fc3e49e3530f9fe704a3c0 = L.marker(
+                [30.18751122221409, 120.2704705839749],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_2206bd3544ac9c8e4bbf58010268a751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73e0a61523712ffd3f24388b35d26f5d = $(`<div id="html_73e0a61523712ffd3f24388b35d26f5d" style="width: 100.0%; height: 100.0%;">Area: 杭州·萧山区<br>Average Salary: 5.361111111111111</div>`)[0];
+                popup_2206bd3544ac9c8e4bbf58010268a751.setContent(html_73e0a61523712ffd3f24388b35d26f5d);
+            
+        
+
+        marker_8146088883fc3e49e3530f9fe704a3c0.bindPopup(popup_2206bd3544ac9c8e4bbf58010268a751)
+        ;
+
+        
+    
+    
+            marker_8146088883fc3e49e3530f9fe704a3c0.bindTooltip(
+                `<div>
+                     杭州·萧山区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a4a8f82f275a36cd971af51f9f7cd8 = L.marker(
+                [30.265916325588922, 120.13643801205312],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_00761dd75264af006d523cfc3a21f97b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa903472a0a98cec0a20e2281a525a93 = $(`<div id="html_fa903472a0a98cec0a20e2281a525a93" style="width: 100.0%; height: 100.0%;">Area: 杭州·西湖区<br>Average Salary: 5.75</div>`)[0];
+                popup_00761dd75264af006d523cfc3a21f97b.setContent(html_fa903472a0a98cec0a20e2281a525a93);
+            
+        
+
+        marker_c1a4a8f82f275a36cd971af51f9f7cd8.bindPopup(popup_00761dd75264af006d523cfc3a21f97b)
+        ;
+
+        
+    
+    
+            marker_c1a4a8f82f275a36cd971af51f9f7cd8.bindTooltip(
+                `<div>
+                     杭州·西湖区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac9e7a6150b120790def11e86883100a = L.marker(
+                [30.32932321778379, 120.50047946404098],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_de4688de7f14368f45cdd4a36a8bc2e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2cf2ef6692b757c6aa078fa894a3315 = $(`<div id="html_b2cf2ef6692b757c6aa078fa894a3315" style="width: 100.0%; height: 100.0%;">Area: 杭州·钱塘区<br>Average Salary: 5.9375</div>`)[0];
+                popup_de4688de7f14368f45cdd4a36a8bc2e9.setContent(html_b2cf2ef6692b757c6aa078fa894a3315);
+            
+        
+
+        marker_ac9e7a6150b120790def11e86883100a.bindPopup(popup_de4688de7f14368f45cdd4a36a8bc2e9)
+        ;
+
+        
+    
+    
+            marker_ac9e7a6150b120790def11e86883100a.bindTooltip(
+                `<div>
+                     杭州·钱塘区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e0bec3d27b201d676107577c8fb1164 = L.marker(
+                [29.99530996279798, 120.58843667180591],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_efaa17c14e41969c366000512aa56cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fdef138c93e05db225b8462c4b447f7 = $(`<div id="html_7fdef138c93e05db225b8462c4b447f7" style="width: 100.0%; height: 100.0%;">Area: 绍兴·越城区<br>Average Salary: 5.0</div>`)[0];
+                popup_efaa17c14e41969c366000512aa56cc7.setContent(html_7fdef138c93e05db225b8462c4b447f7);
+            
+        
+
+        marker_9e0bec3d27b201d676107577c8fb1164.bindPopup(popup_efaa17c14e41969c366000512aa56cc7)
+        ;
+
+        
+    
+    
+            marker_9e0bec3d27b201d676107577c8fb1164.bindTooltip(
+                `<div>
+                     绍兴·越城区
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_036ad8b8c27ab628999aa817df0b8a4a = L.marker(
+                [28.898243786650067, 119.82256555866991],
+                {}
+            ).addTo(map_1d089bffc620183a916a09a9239759e5);
+        
+    
+        var popup_3e08ef52251e315b82f20aeaf0d95b70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be6928b007234db5cfcda22c2fd5a5d8 = $(`<div id="html_be6928b007234db5cfcda22c2fd5a5d8" style="width: 100.0%; height: 100.0%;">Area: 金华·武义县<br>Average Salary: 7.0</div>`)[0];
+                popup_3e08ef52251e315b82f20aeaf0d95b70.setContent(html_be6928b007234db5cfcda22c2fd5a5d8);
+            
+        
+
+        marker_036ad8b8c27ab628999aa817df0b8a4a.bindPopup(popup_3e08ef52251e315b82f20aeaf0d95b70)
+        ;
+
+        
+    
+    
+            marker_036ad8b8c27ab628999aa817df0b8a4a.bindTooltip(
+                `<div>
+                     金华·武义县
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
